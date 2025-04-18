@@ -11,8 +11,8 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.fontsource(),
-        name: 'Inter Variable',
-        cssVariable: '--font-inter'
+        name: 'Onest',
+        cssVariable: '--font-onest'
       }
     ]
   }

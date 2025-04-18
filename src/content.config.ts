@@ -7,7 +7,11 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.date(),
-    author: z.string()
+    author: z.object({
+      name: z.string(),
+      github: z.string()
+    }),
+    image: z.string().optional().default('/default.webp')
   })
 })
 
