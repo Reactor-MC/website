@@ -1,5 +1,6 @@
 ---
 import Head from '@components/Head.astro'
+import Navbar from '@components/Navbar.astro'
 import '@styles/global.css'
 
 interface Props {
@@ -12,7 +13,10 @@ const { title = 'Reactor MC' } = Astro.props
 <!doctype html>
 <html lang="en">
   <Head {title} />
-  <body class="mx-auto bg-primary text-white max-w-6xl">
-    <slot />
+  <body class="bg-primary text-white">
+    <main class="container mx-auto max-w-7xl py-30">
+      <Navbar />
+      <slot />
+    </main>
   </body>
 </html>
